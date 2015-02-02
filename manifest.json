@@ -1,19 +1,19 @@
 {
-  "name": "Neutralike for Facebook",
-  "version": "0.0.8",
+  "name": "Remove Social Scoring",
+  "version": "0.0.1",
   "manifest_version": 2,
-  "description": "This extension purges 'Like' functionality from Facebook.",
-  "homepage_url": "http://github.com/adampowers/neutralike",
+  "description": "This extension purges social scoring systems from Facebook, Reddit, Twitter, and Youtube. Forked from Adam Powers Neutralike.",
+  "homepage_url": "https://github.com/notnsane/remove-social-scoring/",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
   "default_locale": "en",
-  "permissions": [ "https://www.facebook.com/*" ],
+  "permissions": [ "*://*.facebook.com/*", "*://*.reddit.com/*", "*://*.twitter.com/*", "*://*.youtube.com/*", "*://plus.google.com/*" ],
   "content_scripts": [
     {
-      "matches": [ "https://www.facebook.com/*" ],
+      "matches": [ "*://*.facebook.com/*", "*://*.reddit.com/*", "*://*.twitter.com/*", "*://*.youtube.com/*", "*://plus.google.com/*" ],
       "css": [ "main.css" ],
       "js": [ "jquery.min.js", "bootstrap.min.js", "jquery.cookie.min.js", "main.js" ],
       "run_at": "document_end"
