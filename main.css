@@ -1,3 +1,7 @@
+/*
+Facebook "Like" removal
+*/
+
 a.UFILikeLink,
 a.UFIBlingBox > span:first-child,
 li.UFILikeSentence,
@@ -24,32 +28,32 @@ span#mercurymessagesCountValue,
 	background-color: #48649f;;
 }
 
-.scienceCTA {
-	background: #fff;
-	border: 1px solid;
-	border-color: #e5e6e9 #dfe0e4 #d0d1d5;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
+/*
+Twitter "Favorite" removal
+*/
+div.ProfileTweet-action--favorite { display: none; }
+li.ProfileNav-item--favorites { display: none; }
 
-	margin-bottom: 10px;
-	padding: 10px;
+/* 
+Reddit "Karma" removal
+*/
 
-}
-.scienceCTA span { color: rgb(20, 24, 35); font-family: Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif; font-size: 14px; }
-.scienceCTA .dot { color: #9197a3; }
+.midcol.unvoted { display: none; }
+span.rank { margin-right: 10px; }
+span.score { display: none; }
 
-.scienceCTA .comment_link {
-	margin-left: 0px;
-}
+/*
+Youtube "Like" removal 
+*/
 
-.scienceCTA #surveyForm {
-	margin-top: 1em;
-	display: none;
-}
+button#watch-like, button#watch-dislike { display: none; }
+div#watch8-action-buttons { padding-bottom: 15px; }
 
 /* 
 Guide to selectors targeted
 
+FACEBOOK
+--------
 a.UFILikeLink							"Like" link on posts.
 a.UFIBlingBox > span:first-child		The number of likes in the "BlingBox".
 li.UFILikeSentence						"X and N people like this."
@@ -62,5 +66,18 @@ span#requestsCountValue					Notification badge for friend requests.
 span#notificationsCountValue			Notification badge for notification center.
 span#mercurymessagesCountValue			Notification badge for messages.
 .fbChatTab span 						Notification badge on chats.
+
+TWITTER
+-------
+div.ProfileTweet-action--favorite		The Favorite number and button on the profile view.
+li.ProfileNav-item--favorites			The Favorited post by the user
+
+REDDIT
+------
+.midcol.unvoted							The whole points system in main view
+
+YOUTUBE
+-------
+button#watch-like, button#watch-dislike	Buttons to like and dislike a video removed
 
 */
