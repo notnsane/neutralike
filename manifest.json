@@ -1,6 +1,6 @@
 {
   "name": "Remove Social Scoring",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "description": "This extension purges social scoring systems from Facebook, Reddit, Twitter, and Youtube. Forked from Adam Powers Neutralike.",
   "homepage_url": "https://github.com/notnsane/remove-social-scoring/",
